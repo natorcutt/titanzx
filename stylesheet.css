@@ -2,6 +2,39 @@ body {
 font-family: 'Noto Sans', sans-serif; 
 } 
 
+#sticky {
+    background-color: #BABABA; 
+    width: 100%; 
+}
+
+header img { 
+width: 30%; 
+float: left; 
+display: inline;
+    margin-top: 10px;
+}
+nav { 
+width: 70%; 
+    display: inline-block; 
+    margin:auto; 
+    float: right;
+    margin-top:38px; 
+}
+
+nav ul li a { 
+text-decoration: none;
+font-size: 14px; 
+padding: 8px; 
+color: black; 
+margin:auto;
+}
+
+nav ul li { 
+display: block; 
+float: left; 
+}
+
+
 /* ---- All Sections ------ */ 
 .container { 
 width: 100%; 
@@ -49,32 +82,28 @@ width: 100%;
 display: block; 
 } 
 
-.head { 
+header  { 
 margin: auto; 
-width: 85%; 
+width: 30%; 
 display: inline-block; 
+    margin-top: 10px;
 }
 
-.logo { 
-float: left; 
-width: 10% 
-display: inline; 
-padding: 20px;
-} 
 
 .subheader { 
-float: right; 
+float: left; 
 display: inline;
-font-size: 25px;  
+font-size: 20px;  
 padding: 20px;
 } 
 
 .title { 
 margin: auto; 
-width: 60%;
+width: 50%;
 display: block;
 font-size: 30px; 
-padding: 20px; 
+margin-top: 50px;
+    text-align: center;
 } 
 
 #mainpics { 
