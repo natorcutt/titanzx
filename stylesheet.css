@@ -2,6 +2,52 @@ body {
 font-family: 'Noto Sans', sans-serif; 
 } 
 
+#sticky { 
+padding: 15px; 
+width: 100%;
+margin: auto; 
+    display: inline-block; 
+    background-color: #A3A3A3;
+}
+header { 
+width: 30%; 
+display: inline-block;
+}
+
+nav { 
+width: 65%;
+display: inline-block;
+float: right;
+    margin-top: 40px;
+}
+
+nav ul li a { 
+text-decoration: none; 
+font-size: 13px; 
+    padding: 7px; 
+   
+    text-align: center;
+}
+
+nav ul li { 
+display: block; 
+float: left;
+}
+
+.logo { 
+float: left; 
+display: inline; 
+width: 35%;
+} 
+
+.subheader { 
+float: left; 
+display: inline-block;
+font-size: 20px;  
+padding: 10px;
+    
+} 
+
 /* ---- All Sections ------ */ 
 .container { 
 width: 100%; 
@@ -49,32 +95,16 @@ width: 100%;
 display: block; 
 } 
 
-.head { 
-margin: auto; 
-width: 85%; 
-display: inline-block; 
-}
 
-.logo { 
-float: left; 
-width: 10% 
-display: inline; 
-padding: 20px;
-} 
-
-.subheader { 
-float: right; 
-display: inline;
-font-size: 25px;  
-padding: 20px;
-} 
 
 .title { 
-margin: auto; 
-width: 60%;
-display: block;
+margin-top: 20px; 
+    margin: auto;
+width: 50%;
+display: inline-block;
 font-size: 30px; 
-padding: 20px; 
+padding: 20px;
+    text-align: center;
 } 
 
 #mainpics { 
