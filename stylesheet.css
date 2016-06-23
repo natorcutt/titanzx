@@ -127,6 +127,10 @@ display: block;
 width: 85%;  
 } 
 
+ul.contents { 
+list-style-type: none;
+} 
+
 .block1 { 
 left-margin: 20px; 
 } 
@@ -206,7 +210,7 @@ width: 26%;
 display: block; 
 } 
 
-/* ------ Table ----- */ 
+/* ----------------- Table ---------------- */ 
 table { 
 border-collapse: collapse; 
 } 
@@ -214,6 +218,11 @@ border-collapse: collapse;
 td.threadsize { 
 border-top: none; 
 } 
+
+.ui-responsive { 
+margin: auto; 
+width:45%; 
+}
 
 th { 
 border: 1px solid black; 
