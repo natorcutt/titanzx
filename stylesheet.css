@@ -9,42 +9,42 @@ margin: auto;
     display: inline-block; 
     background-color: #A3A3A3;
 }
-header { 
+/*header { 
 width: 30%; 
 display: inline-block;
-}
+} */
 
-nav { 
+/* nav { 
 width: 65%;
 display: inline-block;
 float: right;
     margin-top: 40px;
-}
+} */
 
-nav ul li a { 
+/*nav ul li a { 
 text-decoration: none; 
 font-size: 13px; 
     padding: 7px; 
    
-    text-align: center;
+    text-align: center;*/
 }
 
-nav ul li { 
+/* nav ul li { 
 display: block; 
 float: left;
-}
+} */
 
-.logo { 
+/*.logo { 
 float: left; 
 display: inline; 
 width: 35%;
-} 
+} */ 
 
-.subheader { 
+/*.subheader { 
 float: left; 
 display: inline-block;
 font-size: 20px;  
-padding: 10px;
+padding: 10px;*/
     
 } 
 
@@ -218,28 +218,28 @@ width: 85%;
 
 .fastenerid { 
 margin: auto; 
-display: inline-block; 
-width: 85%; 
+display: block; 
+width: 80%; 
+padding: 10px;
 } 
 
 .bolt1 { 
-width: 50%; 
+width: 45%; 
 display: block; 
 margin: auto; 
-padding: 5px;
 } 
 
 .bolt2 { 
-width: 50%; 
+width: 45%; 
 display: block;
 margin: auto; 
-padding: 5px; 
 } 
 
 .fid { 
 margin: auto; 
-width: 26%;
+width: 18%;
 display: block; 
+text-align: center;
 } 
 
 /* ----------------- Table ---------------- */ 
@@ -275,7 +275,8 @@ width: 85%;
 #standtorquetitle { 
 margin: auto; 
 display: block; 
-width: 80%; 
+width: 68%; 
+text-align: center;
 } 
 
 #standtorquetitlem { 
@@ -575,6 +576,128 @@ width: 70%;
 display: block; 
 } 
 
+/* --------Sepcifications Section ------- */ 
+
+.speccontents { 
+margin: auto; 
+width: 85%; 
+display: block; 
+}
+.typesofspecs { 
+list-style-type: none; 
+}
+.speccontents ul li { 
+list-style-type: none; 
+} 
+
+#grade158 { 
+margin: auto; 
+width: 45%;
+padding: 10px;
+text-align: center; 
+}
+.tablegrade158 { 
+margin: auto; 
+width: 45%;
+text-align:center;
+}
+.standtorque h5 { 
+margin:auto; 
+width: 18%; 
+padding: 8px;
+text-align: center;
+}
 
 
+/* ------- Hamburger Menu --------- */ 
+body{
+  font-family: 'Noto Sans', sans-serif;
+	margin:0;
+}
+header{
+	width:100%; 
+	background:#1d1f20; 
+	height:50px; 
+	line-height:50px;
+}
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.menu{
+    z-index:1000000; 
+    font-weight:bold; 
+    font-size:0.8em; 
+    width:100%; 
+    background:#131313;  
+    position:absolute; 
+    text-align:center;
+}
+.menu ul {
+    margin: 0; 
+    padding: 0; 
+    list-style-type: none; 
+    list-style-image: none;
+}
+.menu li {
+    display: block;   
+    padding:15px 0 15px 0; 
+    border-bottom:#1d1f20 1px solid;
+}
+.menu li:hover{
+    display: block;    
+    background:#181818; 
+    padding:15px 0 15px 0; 
+    border-bottom:#1d1f20 1px solid;
+}
+.menu ul li a { 
+    text-decoration:none;  
+    margin: 0px; 
+    color:#fff;
+}
+.menu ul li a:hover {  
+    color: #fff;
+    text-decoration:none;
+}
 
+.menu a{
+    text-decoration:none;
+    color:white;
+}
+.menu a:hover{
+    text-decoration:none; 
+    color:white;
+}
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+} 

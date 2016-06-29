@@ -4,18 +4,26 @@
 		<link rel="stylesheet" type="text/css" href="stylesheet.css">
 		<link href='https://fonts.googleapis.com/css?family=Noto+Sans' rel='stylesheet' type='text/css'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>	
+        <script type="text/javascript" src="script.js"> </script>
 		<script> 
 			$(document).ready(function(){ 
 			}); 
 		</script> 
 	</head> 
 <body> 
-    <div id="sticky">
-<header> 
+    <!-- <div id="sticky"> -->
+<!-- <header> 
  <img class="logo" src="Logo no white background.png" />
 		<h2 class="subheader"> Residential Products </h2> 
+</header> -->
+    
+     <header>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
 </header>
+    
     <nav> 
+        <div class="menu">
         <ul> 
             <li> <a href="index.html"> Home </a> </li> 
             <li> <a href="safety.html"> Safety</a></li>
@@ -27,9 +35,81 @@
             <li> <a href="mowerdeck.html"> Mower Deck</a></li>
             <li> <a href="electrical.html"> Electrical </a></li>
         </ul>
+            </div>
         </nav>
-    </div>
+<!--    </div>  -->
+    
+   
+
+
+    
+    
+    
+    
+    
 <div class="container"> 
+<section class="speccontents"> 
+<h3 id="tableofcontents">Specifications Table of Contents </h3>
+    <ul class="typesofspecs"> 
+        <li>Torque Specifications</li>
+        <li> Mechanical Properties</li>
+        <li> <a href="#standtorquetitle"> Standrard Torque for Dry, Zinc Plated, Steel Fasteners (Inch Series) </a></li>
+            <ul> 
+                <li> <a href="#grade158">Grade 1, 5, 8 Fasteners with Thin Height Nuts </a> </li>
+                    <ul> 
+                        <li><a href="#grade158"> Inches/Pounds </a> </li>
+                        <li> <a hreaf="#grade158ft">Feet/Pounds </a> </li>
+                    </ul>
+                <li> <a href="#grade1bolts">SAE Grade 1 Bolts, Screws, Studs & Sems with Regular Height Nuts  </a></li>
+                    <ul> 
+                        <li> Inches/Pounds </li>
+                        <li> Feet/Pounds</li>
+                    </ul>
+                <li> SAE Grade 5 Bolts, Screws, Studs & Sems with Regular Height Nuts</li>
+                    <ul> 
+                        <li> Inches/Pounds </li>
+                        <li> Feet/Pounds</li>
+                    </ul>
+                <li> SAE Grade 8 Bolts, Screws, Studs & Sems with Regular Height Nuts </li>
+                    <ul> 
+                        <li> Inches/Pounds </li>
+                        <li> Feet/Pounds</li>
+                    </ul>
+            </ul>
+        <li> Metric Fasteners</li>
+                    <ul> 
+                        <li> Class 8.8 Bolts, Screws, Studs with Regular Height Nuts</li>
+                            <ul> 
+                                <li> Inches/Pounds </li>
+                                <li> Feet/Pounds</li>
+                            </ul>
+                        <li> Class 10.9 Bolts, Screws, Studs with Regular Height Nuts</li>
+                            <ul> 
+                                <li> Inches/Pounds </li>
+                                <li> Feet/Pounds</li>
+                            </ul>
+                    </ul>
+        <li> Alloy Steel Set Screw Recommended Torque </li>
+            <ul> 
+                <li> Square Head (in-lb) </li>
+                <li> Square Head (ft-lb) </li>
+                <li> Hex Socket (in-lb)</li>
+                <li> Hex Socket (ft-lb) </li>
+            </ul>
+        <li> Wheel Bolts & Lug Nuts</li>
+            <ul> 
+                <li>Feet per Pound Greater Than or Equal to Newton Meters</li>
+                <li> Feet per Pound Less than or Equal to Newton Meters</li>
+            </ul>
+        <li> ThreadCutting Screws (Zinc Plated Steel)</li>
+        <li> Self Tapping Screw </li>
+        <li> Alternative Finishes or Plating</li>
+        <li> Fastener Guidelines, Tips and Hints</li>
+    </ul>
+</section>        
+ <div id="emptyspace"> 
+</div>        
+    
     <section id="specs">
 <h3> Specifications </h3> 
 <h4 id="torquespecs"> Torque Specifications </h4> 
@@ -43,6 +123,8 @@
 	length of thread engagement, etc. </p> 
 	<p> The standard method of verifying torque shall be performed by marking a line on the fastener (head or nut) and mating part, then back off fastener 1/4 of a turn. Measure the torque
 	required to tighten the fastener until the lines match up. </p> 
+        
+<div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
 <section class="fastenerid">
 	<h4 class="fid"> Fastener Identification </h4>
 		<img class="bolt1" src="fasteneridentification.PNG" />
@@ -55,10 +137,9 @@
 
 <section class="standtorque">
 <h4 id="standtorquetitle"> Standard Torque for Dry, Zinc Plated, and Steel Fasteners (Inch Series) </h4>
-	<img src="specs1.PNG" /> 
-        <h5> Grade 1, 5, 8 Fasteners with Thin Height Nuts </h5>
-        <h5> (in. / lbs.)</h5>
-    <table> 
+        <h4 id="grade158"> Grade 1, 5, 8 Fasteners with Thin Height Nuts </h4>
+        <h5> (Inches / Pounds)</h5>
+    <table class="tablegrade158"> 
         <tr> 
             <th> Thread Size</th>
             <th> in - lb</th>
@@ -95,8 +176,9 @@
     <div id="emptyspace"> 
 </div>
 <!-- Ft-lbs Table for Grade 1, 5, 8 Fasteners --> 
-<h5> (ft. / lbs.) </h5>
-    <table> 
+<h5 id="grade158ft">
+    (ft. / lbs.) </h5>
+    <table class="tablegrade158"> 
         <tr> 
             <th> Thread Size</th>
             <th> ft - lb</th>
@@ -146,13 +228,13 @@
             <td> 140 +/- 20</td>
         </tr>
     </table>
-
+<div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
     <div id="emptyspace"> 
 </div>
     
     
 <!-- -------SAE Grade 1 Bolts Table (in-lb/ft-lb)--------- --> 
-    <h5> SAE Grade 1 Bolts, Screws, Studs, & Sems with Regualr Height Nuts (SAE Grade 2 or better nuts) </h5>
+    <h4 id="grade1bolts">Grade 1 Bolts, Screws, Studs, & Sems with Regualr Height Nuts (SAE Grade 2 or better nuts) </h4>
     <h5> (in./lbs. and N/cm) </h5>
    <table> 
         <tr> 
@@ -262,8 +344,10 @@
             <td> 305 +/- 34</td>
         </tr>
     </table>
+    
+<div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
 <!-- SAE Grade 5 Bolts --> 
-    <h5> SAE Grade 5 Bolts, Screws, Studs, & Sems with Regular height Nuts (SAE Grade 5 or better nut) </h5>
+    <h4> SAE Grade 5 Bolts, Screws, Studs, & Sems with Regular height Nuts (SAE Grade 5 or better nut) </h4>
     <h5> (in. / lbs. and N / cm) </h5>
     <table> 
         <tr> 
@@ -391,11 +475,11 @@
         </tr>
     </table>
     
-     
+     <div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
     <div id="emptyspace">
     </div> 
 <!-- SAE Grade 8 Bolts --> 
-    <h5> SAE Grade 8 Bolts, Screws, Studs & Sems with Regular Height Nuts (SAE Grade 8 or better nut)</h5>
+    <h4> SAE Grade 8 Bolts, Screws, Studs & Sems with Regular Height Nuts (SAE Grade 8 or better nut)</h4>
     <h5> (in./lbs. and N/cm)</h5>
 <table> 
         <tr> 
@@ -524,6 +608,7 @@
             <td> 813 +/- 81</td>
         </tr>
     </table>
+    <div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
 	<p> Note: Reduce torque values listed in the table above by 25% for lubricated fasteners. Lubricated fasteners are defined as threads coated with a lubricated 
 	such as oil, graphite, or thread sealant such as Loctite (R). </p> 
 	<p> Note: Torque values may have to be reduced when installing fasteners into threaded aluminum or brass. The specific torque value should be determined based on the fastener size, 
@@ -545,6 +630,7 @@
 	the aluminum or base material strength, length of thread engagement, etc. </p> 
 	<p> Note: The nominal torque values listed above are based on 75% of the minimum proof load specified in SAE J1199. The tolerance is approximately +/- 10% of the nominal torque value. Thin height nuts include jam nuts. </p> 
 </section> 
+        <div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
 <div id="emptyspace"> 
 </div>
 <section class="othertorque">
@@ -592,47 +678,11 @@
 				</table> 
 <section class="spacer">
 </section> 
-				<table data-role:"table" class="ui-responsive"> 
-					<thead> 
-						<tr> 
-							<th colspan="3">SAE Grade 8 Steel Set Screws</th> 
-						</tr>
-						<tr>					
-							<th rowspan="2"> Thread Size </th> 
-							<th colspan="2"> Recommended Torque </th> 
-						</tr> 
-					</thead> 
-					<tbody> 
-						<tr> 
-							<th> </th> 
-							<th colspan="1"> Square Head </th> 
-							<th colspan="1"> Hex Socket </th> 
-						</tr> 
-						<tr> 
-							<td> 1/4 - 20 UNC </td> 
-							<td> 140 +/- 20 in-lb </td> 
-							<td> 73 +/- 12 in-lb </td> 
-						</tr> 
-						<tr> 
-							<td> 5/16 - 18 UNC </td> 
-							<td> 215 +/- 35 in-lb </td> 
-							<td> 145 +/- 20 in-lb </td> 
-						</tr> 
-						<tr> 
-							<td> 3/8 - 16 UNC </td> 
-							<td> 35 +/- 10 ft-lb </td> 
-							<td> 18 +/- 3 ft-ln </td> 
-						</tr> 
-						<tr> 
-							<td> 1/2 - 12 UNC </td> 
-							<td> 75 +/- 15 ft-lb </td> 
-							<td> 50 +/- 10 ft-lb </td> 
-						</tr> 
-					</tbody> 
-					</table> 
+				
 		<h4 class="wheel"> Wheel Bolts and Lug Nuts </h4> 
 			<img class="spec4" src="specs4.PNG" />
 	</div> 
+    <div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
 	<div id="specs56">
 		<h4 class="thread1"> Thread Cutting Screws (Zinc Plated Steel) </h4>
 			<img class="spec5" src="specs5.PNG" /> 
@@ -643,6 +693,7 @@
 		<p> *Hoe size, material strength, material thickness and finish must be considered when determining specific
 				torque values. All torque values are based on nonlubricatedfasteners. </p> 
 	</div> 
+    <div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
 	<section id="factors">
 	<div class="conversion1"> 
 		<p> <strong> Conversion Factors</strong> </p> 
@@ -663,9 +714,12 @@
 <h3 id="equivalentsconversions"> Equivalents & Conversions </h3> 
 		<h4 id="mill"> Decimal & Millimeter Equivalents </h4> 
 			<img class="spec7" src="specs7.PNG" /> 
+    <div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
 		<h4 id="us"> U.S to Metric Conversions </h4> 
 			<img class="spec8"src="specs8.PNG" />
-	<h4 id="zx"> TITAN ZX Specifications </h4> 
+    <div id="anchor"></div><a id="tableofcontents" href="#tableofcontents">Table of Contents </a>
+	
+    <h4 id="zx"> TITAN ZX Specifications </h4> 
 		<img class="spec9"src="specs9.PNG" /> 
 		<h5 class="subheading"> Power Systems </h5> 
 			<img class="spec10"src="specs10.PNG" /> 
